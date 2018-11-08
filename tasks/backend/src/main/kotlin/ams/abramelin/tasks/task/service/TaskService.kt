@@ -13,13 +13,13 @@ class TaskService {
     private val identifierFactory = IdentifierFactory.getInstance()
 
     @Autowired
-    private lateinit var taskEntryEntryRepository: TaskRepository
+    private lateinit var taskRepository: TaskRepository
 
     @Autowired
     private lateinit var commandGateway: CommandGateway
 
     fun list(): List<TaskEntry> {
-        return taskEntryEntryRepository.findAll().toList()
+        return taskRepository.findAll().toList()
     }
 
     fun create(user: String, title: String) {

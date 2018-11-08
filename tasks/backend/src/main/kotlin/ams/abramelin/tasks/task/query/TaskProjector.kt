@@ -4,7 +4,6 @@ import ams.abramelin.tasks.task.domain.events.*
 import org.axonframework.eventhandling.EventHandler
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.data.mongodb.core.MongoTemplate
-import org.springframework.data.mongodb.core.remove
 import org.springframework.stereotype.Component
 import java.lang.Exception
 
